@@ -19,4 +19,4 @@ while cmd != "q":
     client.send(cmd.encode("utf-8"))
     response = client.recv(1024).decode("utf-8")
     print(response)
-    cmd = input("fixoc-#")
+    cmd = input("user@{}:~$ ".format(host))
